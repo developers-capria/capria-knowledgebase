@@ -66,7 +66,8 @@
             "group": "Companies",
             "pages": [
               "companies/index",
-              "companies/5c-network"
+              "companies/5c-network",
+              "companies/addresshealth"
             ]
           },
           {
