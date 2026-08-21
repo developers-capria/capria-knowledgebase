@@ -40,6 +40,7 @@
             "pages": [
               "portfolio/overview",
               "portfolio/companies",
+              "portfolio/fund-managers",
               "portfolio/investments",
               "portfolio/monitoring"
             ]
