@@ -63,6 +63,16 @@
             ]
           },
           {
+            "group": "Companies",
+            "pages": [
+              "companies/index"
+            ]
+          },
+          {
+            "group": "Fund Managers",
+            "pages": []
+          },
+          {
             "group": "Operations",
             "pages": [
               "operations/data-management",
