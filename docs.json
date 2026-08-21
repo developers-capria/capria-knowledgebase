@@ -65,7 +65,8 @@
           {
             "group": "Companies",
             "pages": [
-              "companies/index"
+              "companies/index",
+              "companies/5c-network"
             ]
           },
           {
