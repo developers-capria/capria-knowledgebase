@@ -1,27 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "Capria Ventures",
+  "projectDescription": "A venture capital knowledge base and source of truth for portfolio management, fund performance tracking, and investment operations.",
   "theme": "maple",
-  "name": "Capria Ventures",
-  "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
-  },
-  "favicon": "/favicon.svg",
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      { "label": "Support", "href": "mailto:info@capria.vc" }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Portal",
-      "href": "https://capria.vc"
-    }
-  },
+  "primaryColor": "#ef7025",
+  "lightColor": "#eec9bc",
+  "darkColor": "#4fa1ab",
   "navigation": {
     "tabs": [
       {
@@ -93,9 +77,15 @@
       }
     ]
   },
-  "footer": {
-    "socials": {
-      "linkedin": "https://linkedin.com/company/capria-ventures"
-    }
-  }
+  "keyFeatures": [
+    "Fund structure and lifecycle tracking",
+    "Portfolio company management",
+    "Capital calls and distributions",
+    "LP reporting and investor communications",
+    "Investment performance metrics (IRR, MOIC, TVPI)",
+    "Benchmarking against industry standards",
+    "Data management and operational workflows",
+    "Third-party integrations"
+  ],
+  "publicApiSurface": []
 }

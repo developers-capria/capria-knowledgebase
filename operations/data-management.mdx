@@ -1,0 +1,95 @@
+---
+title: "Data Management: Keeping the Knowledge Base Accurate"
+sidebarTitle: "Data Management"
+description: "Best practices for maintaining accurate, consistent data in the Capria knowledge base — covering data entry standards, update cadences, and audit processes."
+---
+
+The knowledge base is only as valuable as the data inside it. Consistent data entry standards, regular updates, and periodic audits ensure the team can trust the information they rely on for investment decisions and LP reporting. When everyone enters data the same way — using the same formats, the same naming conventions, and the same update triggers — the knowledge base becomes a genuine source of truth rather than a patchwork of conflicting records.
+
+## Data Ownership
+
+Each data category has a designated owner responsible for keeping it current. The table below maps every major category to its owner and the event that should trigger an update.
+
+| Data Category | Owner | Update Trigger |
+|---|---|---|
+| Fund financials (capital calls, distributions, NAV) | CFO / Fund Administrator | Each call, distribution, and quarter-end |
+| Portfolio company profiles | Deal team | After each funding round or material event |
+| Operational metrics (KPIs) | Portfolio monitoring team | Monthly / quarterly data collection |
+| Valuation marks | CFO + Investment team | Quarterly, or on material valuation event |
+| LP contact information | Investor relations | As LP details change |
+| Fund documents (LPA, subscription agreements) | Legal / General Counsel | On execution |
+
+## Data Entry Standards
+
+Apply these standards consistently across all records. Deviating from them — even with good intentions — introduces ambiguity that compounds over time and erodes confidence in the data.
+
+<Accordion title="Currency and Numbers">
+  Record all amounts in USD unless explicitly noted otherwise. Use consistent decimal precision: two decimal places for dollar amounts (e.g., `$5.25M`) and one decimal place for percentages (e.g., `14.3%`). Where appropriate, express amounts in millions to improve readability — write `$5.0M`, not `$5,000,000`. If an amount is in a foreign currency, record both the original currency amount and the USD equivalent with the conversion rate and date used.
+</Accordion>
+
+<Accordion title="Dates">
+  Use ISO 8601 format (`YYYY-MM-DD`) for all dates throughout the knowledge base. Always record the **transaction date** — the date the event actually occurred — not the reporting date or the date the record was entered. For example, if a capital call wire clears on March 15 but you log it on March 18, the date recorded should be `2025-03-15`. This distinction matters for accurate IRR calculations and audit trails.
+</Accordion>
+
+<Accordion title="Company Names">
+  Use the legal entity name as the primary name for every portfolio company record. Record any DBA (doing business as) or brand name in a separate "Brand Name" field — do not substitute it for the legal name. Do not abbreviate company names in any primary field. Consistency here prevents duplicate records and ensures that all documents, contracts, and data points tie back to the correct entity.
+</Accordion>
+
+<Accordion title="Ownership Percentages">
+  Always record ownership on a **fully diluted basis** unless explicitly stated otherwise, and note the cap table date alongside the percentage. Undiluted ownership figures create misleading performance data. If you have both diluted and undiluted figures, record both and label each clearly. When a new round closes, update the ownership percentage immediately and archive the prior figure with its effective date.
+</Accordion>
+
+<Accordion title="Metric Labeling">
+  Always label whether a metric is **gross** or **net**, and include the as-of date for every metric you record. Gross and net figures carry different meanings for different audiences: LPs care about net returns; the investment team monitors gross performance. Omitting these labels forces the reader to guess, which undermines trust. For example, write `Net IRR: 18.4% (as of 2024-12-31)` rather than simply `IRR: 18.4%`.
+</Accordion>
+
+## Update Checklist
+
+Run through the following steps at the close of every quarter to keep the knowledge base current and ready for LP reporting.
+
+<Steps>
+  <Step title="Collect Portfolio Company Financials and KPIs">
+    Send monthly or quarterly data requests to portfolio companies. Use a standardized template to ensure you receive comparable data across the portfolio.
+  </Step>
+  <Step title="Update Operational Metrics in Each Company Profile">
+    Enter the received KPIs into each portfolio company's profile. Note the reporting period and confirm the data was provided directly by the company.
+  </Step>
+  <Step title="Record New Investments, Follow-Ons, or Exits">
+    Log any new investments, follow-on rounds, or exit events that occurred during the quarter. Include instrument type, amount, valuation, and ownership impact for each.
+  </Step>
+  <Step title="Update Valuation Marks with CFO Approval">
+    Revise fair market value estimates for each portfolio company based on the latest data. All valuation mark changes require CFO sign-off before they are recorded as final.
+  </Step>
+  <Step title="Reconcile Capital Account Data with Fund Administrator">
+    Compare knowledge base capital account records against the fund administrator's statements. Resolve any discrepancies before proceeding to fund-level calculations.
+  </Step>
+  <Step title="Review and Update Fund-Level Metrics">
+    Recalculate TVPI, DPI, and IRR as of quarter-end using reconciled data. Confirm that these figures match across the knowledge base, the fund model, and the fund administrator's records.
+  </Step>
+  <Step title="Flag Data Discrepancies for Resolution">
+    Document any unresolved data issues in the discrepancy log. Do not proceed to LP reporting until all flagged items are resolved or explicitly acknowledged with an explanation.
+  </Step>
+</Steps>
+
+## Data Audit Process
+
+Conduct a comprehensive data audit once per year — typically aligned with the annual financial audit — to validate the integrity of all records in the knowledge base. The audit should cover the following areas:
+
+- **Portfolio company statuses** — Review every portfolio company record and confirm its status is current: active, exited, or written off. Update any records that reflect outdated statuses.
+- **Ownership percentages** — Confirm recorded ownership percentages against the most recent cap tables received from each portfolio company. Flag any discrepancies for deal team review.
+- **Fund-level financial data** — Verify all fund-level financial figures against the audited financial statements issued by the fund administrator. Reconcile any differences.
+- **Archive outdated records** — Move superseded records to an archived state rather than deleting them. Update historical data entries where corrections are needed, and note the reason for each change.
+- **Document all corrections** — Record a correction log that includes the original value, the corrected value, the date of correction, and the reason. This log is part of the audit trail.
+
+<Note>
+  Complete the annual data audit before beginning preparation of the annual LP report. Errors discovered after the report is drafted create rework and delay distribution. Starting the report from a fully audited dataset protects the integrity of LP communications.
+</Note>
+
+## Version Control and History
+
+Maintaining a clean history of data changes is as important as maintaining accurate current data. Follow these practices to ensure the knowledge base serves as a reliable long-term record.
+
+- **Never delete historical records.** Instead, mark them as superseded and retain them in an archived state. Historical data is essential for performance attribution, audit trails, and LP inquiries.
+- **Record the date and reason for every data correction.** A corrected figure without context creates confusion. Always document what changed, when it changed, and why.
+- **Maintain a valuation change log.** Every time a valuation mark is revised, record the prior mark, the new mark, the effective date, and the approving party. This log supports both internal governance and LP transparency.
+- **Store signed fund documents with version numbers.** Legal documents evolve through amendments and restatements. Use a clear versioning convention (e.g., `LPA_v1.0`, `LPA_v1.1_Amendment`) so the team can always locate the current controlling document and trace its history.

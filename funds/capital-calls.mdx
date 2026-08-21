@@ -1,0 +1,92 @@
+---
+title: "Capital Calls: Managing LP Drawdowns and Notices"
+sidebarTitle: "Capital Calls"
+description: "Understand how to manage capital call schedules, draft and send capital call notices, and track LP contributions in the Capria knowledge base."
+---
+
+Capital calls — also called drawdowns — are the mechanism by which a fund requests that LPs contribute a portion of their committed capital. Rather than collecting all committed capital upfront at close, most VC funds draw capital in tranches as investment opportunities arise and expenses come due. Accurate capital call tracking is essential for deployment monitoring, management fee calculation, and LP communication — and errors in capital call notices can damage LP trust and create legal exposure.
+
+## Capital Call Basics
+
+Each capital call is a formal request to LPs that specifies three core pieces of information:
+
+- **(a) The amount each LP must contribute** — calculated proportionally based on each LP's commitment as a percentage of total fund commitments (their "pro-rata share"). An LP who committed $10M to a $100M fund holds a 10% interest and is called 10% of every draw.
+- **(b) The purpose of the draw** — capital may be called for new investments, follow-on investments, management fees, organizational expenses, fund operating expenses, or reserves. Many LPs and auditors require purpose-level detail to properly categorize contributions.
+- **(c) The due date** — LPs are typically given **10 to 15 business days** from the date of notice to wire their contribution. The specific notice period required is defined in the LPA.
+
+## Capital Call Notice
+
+A capital call notice is the formal document sent to LPs requesting their contribution. A complete and well-structured notice reduces LP questions, minimizes wire errors, and creates a clear audit trail. Every capital call notice should include the following:
+
+- Fund name and vintage year
+- Call number and issuance date
+- Total amount being called across all LPs
+- Each LP's individual pro-rata share and dollar amount due
+- Wire instructions (bank name, account number, ABA/SWIFT, reference information)
+- Payment due date
+- Detailed purpose of the draw (new investment — including company name if permitted, management fees, fund expenses, or a combination with amounts broken out by purpose)
+
+<Note>
+  Capital call notices are typically delivered via email to each LP's designated contact and made available simultaneously through the LP portal. Confirm with each LP their preferred delivery method and designated recipient, as some LPs require notices to be sent to specific operations or treasury teams — not the investment contact — to ensure timely funding.
+</Note>
+
+## Tracking Capital Calls
+
+Recording each capital call accurately in the knowledge base creates the audit trail needed for LP reporting, fund accounting, and performance calculations. For every capital call, capture the following:
+
+- **Date of call** — the date the notice is issued to LPs
+- **Call amount** — total fund-level amount and the per-LP breakdown
+- **Purpose** — investment (with portfolio company name), management fees, or fund expenses, with dollar amounts for each purpose category
+- **Settlement date** — the date by which LPs must fund, and the date each LP actually wired their contribution
+- **Confirmation** — wire confirmation reference for each LP payment received
+- **Running totals** — cumulative called capital vs. committed capital, and remaining uncalled capital, updated after each call settles
+
+The table below shows an example capital call record structure:
+
+| Call # | Date | Purpose | Total Amount | Settled Date | Cumulative Called |
+|---|---|---|---|---|---|
+| 1 | 2023-03-15 | Management Fee + Fund Expenses | $1,250,000 | 2023-03-30 | $1,250,000 |
+| 2 | 2023-06-01 | Investment — Portfolio Co. A | $5,000,000 | 2023-06-16 | $6,250,000 |
+| 3 | 2023-09-20 | Investment — Portfolio Co. B + Mgmt Fee | $4,750,000 | 2023-10-05 | $11,000,000 |
+| 4 | 2024-01-10 | Investment — Portfolio Co. C | $3,500,000 | 2024-01-25 | $14,500,000 |
+
+## Management Fee Calculations
+
+Management fees are drawn via capital call on a regular schedule — typically semi-annually in advance. The calculation method depends on which phase of the fund lifecycle you are in:
+
+**During the Investment Period:**
+
+```text
+Management Fee = Committed Capital × Annual Fee Rate × (Days in Period / 365)
+```
+
+Example: A $100M fund at a 2.0% annual fee rate, called semi-annually:
+```text
+$100,000,000 × 2.0% × (182 / 365) = $997,260
+```
+
+**During the Harvest Period:**
+
+```text
+Management Fee = NAV (or Remaining Invested Cost) × Annual Fee Rate × (Days in Period / 365)
+```
+
+The step-down to NAV or invested cost reflects that the GP is managing a smaller active portfolio. Some LPAs also reduce the fee rate itself (e.g., from 2.0% to 1.5%) after the investment period ends.
+
+<Tip>
+  Always double-check management fee calculations against the specific fee provisions in the fund's LPA before issuing a call. Pay particular attention to: (1) the calculation basis (committed vs. invested vs. NAV), (2) any fee offsets for portfolio company monitoring or board fees, and (3) the exact step-down date and methodology. Errors in management fee notices are among the most common and most sensitive capital call mistakes.
+</Tip>
+
+## Common Issues
+
+<Accordion title="LP Fails to Fund on Time">
+  When an LP misses a capital call due date, the LPA typically specifies a **cure period** — commonly 5 to 10 business days — during which the LP can still fund without penalty. If the LP fails to fund within the cure period, most LPAs trigger **default provisions** that may include: accrual of interest on the unpaid amount, forfeiture of a portion of the LP's interest in the fund, dilution of the defaulting LP's interest, or — in extreme cases — forced sale of the LP's interest to other LPs or a third party. Before taking any default action, consult the fund's legal counsel and review the LPA default provisions carefully, as these are heavily negotiated and vary significantly across funds.
+</Accordion>
+
+<Accordion title="Over-Calling Capital">
+  If you discover that a capital call collected more than was needed — for example, because a planned investment fell through after the call was funded — the excess capital should be handled per the LPA's provisions. Most LPAs require that excess capital either be (a) **held in a short-term fund account** and applied against the next capital call, or (b) **returned to LPs pro-rata** within a specified period. Returning capital is administratively similar to a distribution: you issue a notice to LPs identifying the amount being returned per LP and the wire date. Returned capital may or may not be recallable depending on the LPA's recycling provisions.
+</Accordion>
+
+<Accordion title="Recycling Provisions">
+  Many VC fund LPAs include **recycling provisions** that allow the fund to re-call capital that has been returned to LPs — for example, proceeds from an early portfolio exit that occur during the investment period. Recycling allows the GP to redeploy realized proceeds into new investments without those proceeds counting against the fund's investment limit. Recycling provisions vary widely: some LPAs cap total recycling at a percentage of committed capital, some limit recycling to proceeds received within the investment period, and some require LP consent. Always check the LPA's recycling language before treating returned proceeds as recallable capital.
+</Accordion>

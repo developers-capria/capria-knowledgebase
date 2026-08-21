@@ -1,0 +1,73 @@
+---
+title: "Fund Structure: Legal Entities, Vehicles, and LP Relationships"
+sidebarTitle: "Fund Structure"
+description: "Learn how Capria's funds are structured, including legal vehicles, GP and LP roles, side letters, and fund documentation."
+---
+
+Understanding fund structure is foundational to managing your funds accurately. The legal entities, vehicle types, and the relationships between the GP and LPs shape how capital flows, how fees are charged, and how distributions are ultimately made to investors. Before you record a capital call, model a distribution waterfall, or onboard a new LP, you need a clear picture of the legal and operational architecture underpinning each fund.
+
+## Legal Vehicles
+
+Most US-domiciled venture capital funds are structured as **Delaware Limited Partnerships** — a flexible, well-understood legal form that clearly separates the roles and liabilities of the general partner and limited partners. For funds with significant international LP bases, a **Cayman Islands exempted limited partnership** or similar offshore structure is often used alongside the main fund to accommodate investors with tax or regulatory constraints. In practice, many funds operate with **parallel vehicles** — two or more legal entities making identical investments side-by-side, each designed to serve a different investor type (e.g., US taxable, US tax-exempt, non-US).
+
+<Note>
+  The specific legal structure for each fund — including the jurisdiction of formation, the identity of the GP entity, and the terms governing parallel vehicles — is documented in the fund's **Limited Partnership Agreement (LPA)**. Always reference the LPA for authoritative structural details.
+</Note>
+
+## Fund Hierarchy
+
+Capria's funds operate within a layered organizational hierarchy. Understanding this hierarchy helps you trace how capital flows from LPs into investments and how management fees and carried interest flow back to the GP and management company.
+
+A typical structure looks like this:
+
+- **Main Fund (LP)** — the primary legal entity that holds investments and into which LPs commit capital
+- **General Partner Entity** — a separate LLC or LP that acts as the GP of the main fund, making investment decisions and holding the carried interest
+- **Management Company** — the operating entity that employs the investment team and receives management fees from the fund
+- **Advisory Entities** — local advisory or sub-advisory entities in specific geographies (relevant for Capria's emerging markets strategy)
+
+Where a fund has international investors, **parallel funds** invest alongside the main fund in every deal at the same terms, while **co-investment vehicles** allow select LPs to invest directly in individual portfolio companies outside the main fund.
+
+## Roles and Responsibilities
+
+| Role | Entity | Responsibilities |
+|---|---|---|
+| General Partner | GP LLC / GP LP | Makes all investment decisions, manages the fund, holds carried interest, signs on behalf of the fund |
+| Limited Partner | Individual LP entities (institutions, family offices, individuals) | Commits and contributes capital, receives distributions, has no day-to-day management role |
+| Management Company | Capria Management Company LLC (or equivalent) | Employs investment professionals, sources deals, monitors portfolio, receives management fees |
+| Fund Administrator | Third-party administrator (e.g., Carta, Citco, Aztec) | Maintains fund books and records, calculates NAV, prepares capital call and distribution notices, produces LP statements |
+
+## Key Fund Documents
+
+Every fund is governed by a suite of legal documents. The following are the most important documents you will reference in day-to-day fund management.
+
+<Accordion title="Limited Partnership Agreement (LPA)">
+  The LPA is the governing legal document of the fund. It defines the rights and obligations of the GP and all LPs, the fund's investment strategy and restrictions, the term and extension provisions, management fee rates and calculation methodology, carried interest percentage and hurdle rate, distribution waterfall mechanics, default provisions, and removal/no-fault divorce rights. The LPA is the first document to consult when any question arises about fund operations.
+</Accordion>
+
+<Accordion title="Private Placement Memorandum (PPM)">
+  The PPM is the primary marketing document used to solicit LP commitments during fundraising. It describes the fund's strategy, target sectors and geographies, the investment team, risk factors, and a summary of key fund terms. The PPM is not the governing document — the LPA controls — but it provides important background context on the fund's mandate and the GP's representations to LPs.
+</Accordion>
+
+<Accordion title="Subscription Agreement">
+  Each LP executes a subscription agreement when committing capital to the fund. This document records the LP's commitment amount, confirms their eligibility as a qualified purchaser or accredited investor, collects anti-money laundering (AML) and know-your-customer (KYC) information, and establishes the LP's capital account. The subscription agreement is how an LP formally joins the fund.
+</Accordion>
+
+<Accordion title="Side Letters">
+  Side letters are negotiated agreements between the GP and specific LPs that modify or supplement the standard LPA terms for that LP. Common side letter provisions include most-favored-nation (MFN) rights, reduced management fees or carry, enhanced reporting rights, co-investment rights, excuse rights for particular investments, and ERISA compliance provisions. Side letters are binding and must be tracked carefully to ensure each LP receives their negotiated treatment.
+</Accordion>
+
+<Accordion title="Management Fee Agreement">
+  The management fee agreement (sometimes incorporated directly into the LPA) sets out the terms under which the management company receives its management fee — the rate, the calculation basis (committed capital vs. invested capital vs. NAV), the payment frequency (typically semi-annual in advance), and any offsets against portfolio company fees or directors' fees received by the GP.
+</Accordion>
+
+## GP/LP Economics
+
+The economics of a venture capital fund are structured to align the GP's incentives with LP returns.
+
+**Management Fees** cover the operating costs of running the fund — salaries, travel, legal, and administration. During the investment period, the fee is typically calculated on **committed capital** (e.g., 2.0% × $100M fund = $2M/year). During the harvest period, the fee steps down and is typically calculated on **NAV** or **remaining invested cost**, reflecting the fact that the GP is managing a smaller active portfolio.
+
+**Carried Interest** is the GP's share of fund profits — the primary economic incentive for the investment team to generate strong returns. The standard VC carry structure works as follows: after LPs have received back their invested capital and a **preferred return** (hurdle rate, typically 8% IRR), the GP receives a disproportionate share of profits until it "catches up" to its carry percentage, after which profits are split — most commonly **80% to LPs / 20% to the GP**.
+
+<Info>
+  Specific fee rates, hurdle rates, carry percentages, and step-down provisions vary by fund and are defined in each fund's LPA. Always verify economic terms against the governing documents for the specific fund you are working with before performing any calculations.
+</Info>

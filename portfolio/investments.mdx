@@ -1,0 +1,105 @@
+---
+title: "Investment Records: Rounds, Ownership, and Instruments"
+sidebarTitle: "Investments"
+description: "Track every investment Capria has made, including round details, ownership percentages, convertible instruments, and co-investors."
+---
+
+Each investment record captures the specific terms and details of a capital deployment — from the round type and instrument used to the resulting ownership stake and the co-investors at the table. Every time Capria deploys capital into a company, create a new investment record. This includes initial investments, follow-on rounds, and bridge financings. Maintaining complete, accurate investment records is essential for ownership tracking, cost basis calculations, and fund-level performance reporting.
+
+## Investment Record Fields
+
+Create a separate record for each discrete capital deployment. The fields below apply to every investment, regardless of instrument type or round stage.
+
+| Field | Description |
+|---|---|
+| Fund | The Capria fund vehicle that made the investment (e.g., Fund I, Fund II) |
+| Company | The portfolio company receiving the capital |
+| Investment Date | The date on which capital was wired or legally deployed |
+| Round Type | The stage label for the round (Seed, Series A, Series B, Bridge, etc.) |
+| Instrument | The legal instrument used: common stock, preferred stock, SAFE, or convertible note |
+| Investment Amount | The amount Capria invested in this specific round |
+| Round Size | The total amount raised by the company in this round from all investors |
+| Pre-money Valuation | The agreed company valuation immediately before this round closed |
+| Post-money Valuation | The company valuation after the round closes (pre-money + round size) |
+| Ownership % (post) | Capria's fully diluted ownership stake immediately after the round closes |
+| Co-investors | Names of all other investors participating in this round |
+| Lead Investor | The investor leading the round (may be Capria) |
+| Board Seat | Whether Capria holds or is entitled to a board seat as a result of this investment |
+
+## Instrument Types
+
+Different investment instruments carry different rights, conversion mechanics, and risk profiles. Understand the instrument used in each round before recording the investment.
+
+<Accordion title="Common Stock">
+  Common stock is typically issued to founders and early employees at company formation. It carries no liquidation preference and sits below preferred stockholders in the capital structure. In early-stage investments, Capria rarely takes common stock — it is more often seen in secondary purchases of founder shares or unusual early structures.
+
+  **Key attributes to record:**
+  - Number of shares purchased
+  - Price per share
+  - Any voting rights or restrictions associated with the shares
+</Accordion>
+
+<Accordion title="Preferred Stock">
+  Preferred stock is the standard instrument for institutional VC investments. It provides a liquidation preference (typically 1x non-participating), anti-dilution protection (usually broad-based weighted average), and pro-rata rights for future rounds. Each series of preferred stock (Series A, Series B, etc.) is a separate class with its own terms as defined in the term sheet and stock purchase agreement.
+
+  **Key attributes to record:**
+  - Series designation (e.g., Series A Preferred)
+  - Liquidation preference (amount and participating vs. non-participating)
+  - Anti-dilution provision type
+  - Pro-rata rights (amount and conditions)
+  - Dividend terms, if any
+</Accordion>
+
+<Accordion title="SAFE (Simple Agreement for Future Equity)">
+  A SAFE is a convertible instrument that gives Capria the right to receive equity at a future priced round. It is not debt — it carries no interest rate or maturity date — but it does convert into preferred stock when a qualifying financing event occurs. SAFEs are common in pre-seed and seed-stage investments.
+
+  **Key attributes to record:**
+  - Valuation cap (the maximum valuation at which the SAFE converts)
+  - Discount rate (percentage discount to the round price at conversion, if applicable)
+  - MFN (Most Favored Nation) clause, if present
+  - Qualifying financing threshold that triggers conversion
+  - Post-money or pre-money SAFE structure
+</Accordion>
+
+<Accordion title="Convertible Note">
+  A convertible note is a debt instrument that converts into equity at a future priced round or upon maturity. Unlike a SAFE, it accrues interest and has a maturity date. If the company does not raise a qualifying round before maturity, the note may be repayable or subject to renegotiation.
+
+  **Key attributes to record:**
+  - Principal amount
+  - Interest rate (annual, simple or compounding)
+  - Maturity date
+  - Valuation cap and/or discount rate at conversion
+  - Conversion trigger (qualifying financing amount)
+  - Repayment or rollover terms if maturity is reached without conversion
+</Accordion>
+
+## Ownership Tracking
+
+Capria tracks ownership on both a non-diluted and fully diluted basis. Use fully diluted ownership as the primary figure for portfolio reporting, as it reflects the economic reality of all instruments that could convert into equity.
+
+- **Non-diluted ownership**: calculated as shares held by Capria divided by total issued and outstanding shares. This figure does not account for options, warrants, SAFEs, convertible notes, or unissued option pool shares.
+- **Fully diluted ownership**: calculated as shares held by Capria divided by the total of all issued shares plus the unissued option pool, plus all shares that would be issued upon conversion of outstanding convertible instruments (SAFEs, notes, warrants). This is the most conservative and accurate measure of economic ownership.
+
+<Warning>
+  Ownership percentages change with every new funding round, option pool expansion, and SAFE or convertible note conversion. Never rely on a historical ownership figure without confirming it against the most recent cap table. Always request an updated, fully diluted cap table from the company after each financing event.
+</Warning>
+
+## Follow-on Investments
+
+Pro-rata rights give Capria the contractual right to participate in future funding rounds up to its current ownership percentage, preventing dilution. When the investment team decides to exercise pro-rata rights or make an opportunistic follow-on investment, record it as a new, separate investment record linked to the same portfolio company.
+
+When recording a follow-on investment:
+- Reference the original investment record(s) for the same company
+- Note whether the follow-on was a pro-rata exercise or an additional allocation
+- Update the total cost basis for the company
+- Recalculate fully diluted ownership using the updated cap table
+
+Reserves are capital set aside within a fund to support follow-on investments in existing portfolio companies. Document the reserve allocation per company in the fund's reserve model and update it after each follow-on deployment or when a reserve is released back to the unallocated pool.
+
+## Cost Basis and Valuation
+
+Understanding the difference between cost basis and carrying value is essential for accurate NAV calculations and performance reporting.
+
+- **Cost basis**: the total capital Capria has deployed into a company across all rounds and instruments. This is a fixed historical figure that increases only when new capital is invested. Use cost basis to calculate unrealized loss and to report total invested capital.
+- **Carrying value**: the current fair market value assigned to Capria's position in the company, used for NAV calculations and LP reporting. Carrying value is updated at each mark-to-market event (new round, revenue milestone, or quarterly valuation review) and may be higher or lower than cost basis.
+- **Step-up**: the percentage increase between Capria's average entry price and the current marked valuation. A step-up of 3x means the current carrying value is three times the cost basis. Track step-up per company and at the portfolio level to monitor unrealized value creation.

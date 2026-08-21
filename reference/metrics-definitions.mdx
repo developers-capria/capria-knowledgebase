@@ -1,0 +1,245 @@
+---
+title: "Metrics Definitions: Precise Calculation Methodologies"
+sidebarTitle: "Metric Definitions"
+description: "Precise definitions and calculation methodologies for all performance metrics used in Capria's fund reporting, including IRR, MOIC, TVPI, DPI, RVPI, and PME."
+---
+
+This page provides the precise mathematical definitions and calculation standards used for all performance metrics in Capria's reporting — ensuring consistency across funds, vintages, and LP communications. Whenever a question arises about how a metric is defined or calculated, treat this page as the authoritative reference.
+
+## Fund-Level Return Metrics
+
+These metrics measure the performance of the fund as a whole and are the primary figures reported in LP quarterly and annual communications.
+
+### TVPI (Total Value to Paid-In)
+
+**Definition:** The primary fund performance multiple. TVPI measures total value — both what has been returned to LPs and what remains in the portfolio — relative to the total capital LPs have paid in.
+
+**Formula:**
+
+```
+TVPI = (Cumulative Distributions + Current NAV) / Total Paid-In Capital
+```
+
+**Inputs required:**
+- All LP distributions to date (cumulative, net of any recallable amounts)
+- Current fund NAV (portfolio at fair market value, plus cash and receivables, minus liabilities)
+- Total paid-in capital (sum of all capital calls funded by LPs)
+
+**Example:**
+
+> A fund has called $50M from LPs, distributed $20M in realized proceeds, and the current portfolio NAV is $60M.
+>
+> TVPI = ($20M + $60M) / $50M = **1.6x**
+
+<Note>
+  TVPI is sometimes called TVPI multiple or gross multiple. Early in a fund's life, TVPI is largely driven by RVPI (unrealized value). As the fund matures and exits occur, DPI begins to dominate TVPI. A TVPI above 1.0x means the fund is generating value above invested capital.
+</Note>
+
+---
+
+### DPI (Distributions to Paid-In)
+
+**Definition:** The realized return multiple. DPI measures only capital that has been distributed back to LPs — it is the "cash-on-cash" return and the most conservative measure of fund performance because it reflects only money that LPs have actually received.
+
+**Formula:**
+
+```
+DPI = Cumulative Distributions to LPs / Total Paid-In Capital
+```
+
+**Inputs required:**
+- Cumulative distributions to date (all realized proceeds distributed to LPs)
+- Total paid-in capital
+
+**Example:**
+
+> $20M distributed to LPs / $50M total paid-in capital = **0.4x DPI**
+
+<Note>
+  A DPI above 1.0x means LPs have received back more than their entire invested capital from realized exits. Early-stage VC funds typically have low DPI for most of their life, with DPI accelerating in the harvest period as exits occur.
+</Note>
+
+---
+
+### RVPI (Residual Value to Paid-In)
+
+**Definition:** The unrealized return multiple. RVPI measures the current fair market value of remaining portfolio holdings relative to paid-in capital. It represents the "paper" value of the fund — what is still to be realized.
+
+**Formulas:**
+
+```
+RVPI = Current NAV / Total Paid-In Capital
+
+RVPI = TVPI - DPI
+```
+
+**Inputs required:**
+- Current fund NAV
+- Total paid-in capital
+
+**Example:**
+
+> $60M current NAV / $50M paid-in capital = **1.2x RVPI**
+>
+> Check: 1.6x TVPI − 0.4x DPI = 1.2x RVPI ✓
+
+<Tip>
+  Use the TVPI − DPI identity as a quick cross-check when preparing LP reports. If RVPI calculated from NAV does not equal TVPI − DPI, there is a data discrepancy that must be resolved before the report is sent.
+</Tip>
+
+---
+
+### MOIC (Multiple on Invested Capital)
+
+**Definition:** A time-agnostic return multiple measuring total value relative to total capital invested. Unlike IRR, MOIC does not account for the time value of money or the duration of the investment. It is used at both the fund level and the individual investment level.
+
+**Formula:**
+
+```
+MOIC = (Realized Value + Unrealized Value) / Total Invested Capital
+```
+
+**Inputs required:**
+- Realized proceeds from exits (net of transaction costs)
+- Current carrying value of unrealized investments
+- Total capital invested (sum of all investment cost bases)
+
+<Note>
+  At the fund level, MOIC equals TVPI when paid-in capital equals total invested capital (i.e., when all called capital has been deployed into investments with no reserves held in cash). At the individual investment level, MOIC is calculated per company using that company's cost basis and current carrying value.
+</Note>
+
+---
+
+### Gross IRR vs. Net IRR
+
+**Definition:** The Internal Rate of Return (IRR) is the discount rate at which the net present value of all fund cash flows equals zero. It is a time-weighted return that accounts for both the magnitude and timing of cash flows.
+
+**Formula (conceptual):**
+
+```
+NPV = Σ [Cash Flow_t / (1 + IRR)^t] = 0
+```
+
+**Cash flow treatment by metric:**
+
+| Metric | Negative Cash Flows (out) | Positive Cash Flows (in) |
+|---|---|---|
+| **Gross IRR** | Capital calls | Distributions + ending NAV |
+| **Net IRR** | Capital calls + management fees | Distributions net of carry + ending NAV |
+
+<Note>
+  Net IRR is always lower than Gross IRR. The gap between gross and net represents the impact of management fees and carried interest on LP returns. Always report Net IRR in LP communications; Gross IRR may be included for context but must be clearly labeled as gross.
+</Note>
+
+---
+
+### PME (KS-PME Method)
+
+**Definition:** The Public Market Equivalent (PME) benchmarks fund performance against a public market index by discounting fund cash flows using the index's return. The Kaplan-Schoar (KS) PME is the most widely used variant in VC reporting.
+
+**Formula:**
+
+```
+KS-PME = PV(Distributions) / PV(Capital Calls)
+```
+
+Where present values are calculated by compounding each cash flow forward (or discounting back) to a common date using the public market index return for the corresponding period.
+
+**Interpretation:**
+
+| PME Value | Meaning |
+|---|---|
+| **PME > 1.0x** | Fund outperformed the public market index |
+| **PME = 1.0x** | Fund matched the public market index |
+| **PME < 1.0x** | Fund underperformed the public market index |
+
+<Tip>
+  Capria uses the MSCI Emerging Markets index as the primary PME benchmark for EM-focused funds, and the MSCI World index for global funds. Confirm the appropriate benchmark for each fund with the CFO before including PME in LP reports.
+</Tip>
+
+---
+
+## Investment-Level Metrics
+
+These metrics are calculated at the individual portfolio company level and roll up to fund-level reporting.
+
+### Cost Basis
+
+**Definition:** The total capital invested in a specific portfolio company across all investment rounds.
+
+**Formula:**
+
+```
+Cost Basis = Sum of all capital invested in the company across all rounds
+```
+
+Record cost basis per investment tranche (initial investment, follow-on 1, follow-on 2, etc.) to enable accurate investment-level performance attribution.
+
+---
+
+### Carrying Value
+
+**Definition:** The current fair market value assigned to Capria's equity stake in a portfolio company, as determined at each quarterly valuation date.
+
+**Formula:**
+
+```
+Carrying Value = Current fair market value of Capria's stake
+               (based on last round valuation, comparable transactions,
+                or revenue multiple — per IPEV guidelines)
+```
+
+Carrying value is reviewed and updated at minimum quarterly for LP reporting. Refer to the [Reporting Standards](/reference/reporting-standards) page for the full valuation methodology hierarchy.
+
+---
+
+### Investment MOIC
+
+**Definition:** The MOIC calculated for a single portfolio company investment.
+
+**Formula:**
+
+```
+Investment MOIC = (Realized Proceeds + Current Carrying Value) / Cost Basis
+```
+
+**Example:**
+
+> Capria invested $3M in Company X (cost basis). The company was partially sold, generating $2M in realized proceeds. Current carrying value is $5M.
+>
+> Investment MOIC = ($2M + $5M) / $3M = **2.3x**
+
+---
+
+### Ownership Percentage
+
+**Definition:** Capria's proportional ownership stake in a portfolio company, expressed as a percentage of total shares outstanding.
+
+**Formula:**
+
+```
+Fully Diluted Ownership % = Capria Shares / Total Fully Diluted Shares Outstanding
+
+Total Fully Diluted Shares = Issued shares
+                           + Option pool (authorized, including unissued)
+                           + All convertible instruments (as-converted basis)
+```
+
+<Note>
+  Always track and report **fully diluted** ownership for all fund reporting purposes. Basic (non-diluted) ownership may be tracked separately for reference but should never be used as the primary ownership figure in LP reports or investment memos.
+</Note>
+
+---
+
+## Reporting Conventions
+
+Apply these standards consistently across all fund reports and LP communications to ensure comparability.
+
+| Convention | Standard Used |
+|---|---|
+| **Currency** | USD unless otherwise specified |
+| **Decimal precision — multiples** | 1 decimal place (e.g., 2.3x) |
+| **Decimal precision — IRR** | 1 decimal place (e.g., 18.5%) |
+| **Ownership %** | 1 decimal place (e.g., 12.4%) |
+| **As-of date** | Quarter-end dates: Mar 31, Jun 30, Sep 30, Dec 31 |
+| **Gross vs. net labeling** | Always label explicitly; default to net for LP communications |

@@ -1,0 +1,69 @@
+---
+title: "Distributions: LP Waterfall, Timing, and Tracking"
+sidebarTitle: "Distributions"
+description: "Learn how to manage and record fund distributions to limited partners, including waterfall calculations, timing, and distribution notices."
+---
+
+Distributions return realized value from portfolio exits to LPs and the GP. When a portfolio company is acquired, goes public, or achieves another liquidity event, the fund receives proceeds that must be allocated correctly across all investors according to the distribution waterfall defined in the LPA. Understanding how that waterfall works — and maintaining accurate, timely records of every distribution — is critical for LP transparency, carried interest calculations, and fund accounting integrity.
+
+## Distribution Waterfall
+
+The **distribution waterfall** determines the order in which proceeds are allocated between LPs and the GP. The most common structure in US venture capital is the **American-style waterfall**, which allows the GP to receive carried interest on a deal-by-deal basis once LPs have received back their invested capital and preferred return on that investment.
+
+<Steps>
+  <Step title="Return of Capital">
+    LPs first receive back 100% of the capital they contributed — their **called capital** attributable to the investment being realized. No proceeds flow to the GP as carry until all contributing LPs have been made whole on their investment basis. In a whole-fund model, this step requires returning all called capital across the entire fund before carry is paid.
+  </Step>
+  <Step title="Preferred Return (Hurdle Rate)">
+    After return of capital, LPs receive a **preferred return** on their invested capital — typically **8% IRR**, compounded annually from the date of each capital contribution. This hurdle ensures that LPs earn a minimum return before the GP participates in profits. Until the preferred return is fully paid, no carry flows to the GP.
+  </Step>
+  <Step title="GP Catch-Up">
+    Once LPs have received their capital and preferred return, the GP receives a **disproportionate catch-up allocation** — typically 100% of additional proceeds — until the GP has received an amount equal to its carry percentage of total profits distributed so far. For a 20% carry fund, the catch-up continues until the GP has received 20% of (return of capital + preferred return + catch-up), and LPs have received the remaining 80%.
+  </Step>
+  <Step title="Carried Interest Split">
+    After the catch-up is complete, all remaining profits are split between LPs and the GP according to the fund's carried interest percentage — most commonly **80% to LPs** and **20% to the GP**. This 80/20 split continues for the remainder of the fund's distributions.
+  </Step>
+</Steps>
+
+<Note>
+  The steps above describe the **American-style (deal-by-deal) waterfall**, which is standard in US venture capital. Under a **European-style waterfall** — more common in European buyout funds — the GP does not receive any carried interest until LPs have received back their **entire committed capital across all investments in the fund**, not just the capital attributable to the investment being realized. European-style waterfalls significantly reduce the risk of LP clawback obligations but delay GP carry. Always confirm the waterfall style for each fund in the LPA.
+</Note>
+
+## Types of Distributions
+
+Not all distributions are the same. The type of distribution affects how it is recorded, how LPs receive it, and how it impacts fund performance metrics.
+
+| Type | Description | Trigger |
+|---|---|---|
+| Cash Distribution | Proceeds from a liquidity event wired directly to LPs and the GP | IPO (secondary offering), M&A closing, secondary sale of LP interests |
+| In-Kind Distribution | Portfolio company shares distributed directly to LP brokerage accounts rather than sold | Post-IPO lock-up expiry, when the GP determines in-kind is preferable to selling into the market |
+| Return of Capital | Capital returned to LPs without an associated gain — does not generate carry | Write-down recovery, recallable capital being returned, excess capital from a failed investment |
+| Clawback | The GP returns previously paid carried interest to LPs after end-of-fund reconciliation reveals that total carry paid exceeded the GP's entitlement | End-of-fund reconciliation when early-deal carry exceeds what the final portfolio performance supports |
+
+## Distribution Notice
+
+A distribution notice formally communicates an upcoming distribution to LPs. Send the notice before the distribution date to give LPs sufficient time to update records and confirm wire instructions. Every distribution notice should include the following:
+
+- Distribution date (the date proceeds will be wired) and settlement date
+- Total gross distribution amount and the source — including the portfolio company name and transaction type (e.g., "Series B secondary sale of Portfolio Co. D")
+- Each LP's pro-rata share of the distribution, broken out between return of capital, preferred return, and profit (if applicable)
+- Updated **DPI (Distributions to Paid-In)** and **TVPI (Total Value to Paid-In)** as of the distribution date
+- Tax withholding amounts deducted, if any (relevant for non-US LPs subject to withholding)
+- Wire instructions for any LPs receiving wires, or custodian/DTC details for in-kind share distributions
+
+## Tracking Distributions
+
+Maintaining a complete, accurate distribution log is essential for performance reporting, LP account statements, carried interest reconciliation, and audit purposes. For every distribution event, record the following fields:
+
+- **Distribution date** — date proceeds are sent to LPs
+- **Settlement date** — date proceeds are confirmed received (or shares delivered for in-kind)
+- **Gross proceeds** — total proceeds received by the fund from the liquidity event
+- **Net proceeds** — gross proceeds less fund expenses, taxes, or reserves withheld
+- **Per-LP amounts** — each LP's share, broken down by return of capital, preferred return, catch-up, and carried interest components
+- **Running DPI** — updated cumulative distributions divided by paid-in capital after this event
+- **Running TVPI** — updated (distributions + NAV) divided by paid-in capital after this event
+- **Tax withholding notes** — amounts withheld per LP for tax purposes, jurisdiction, and applicable treaty rate
+
+<Tip>
+  Send distribution notices at least **5 business days before the distribution date**. This lead time gives LPs adequate notice to update their own accounting records, confirm wire instructions, and route the notice to their treasury or back-office teams. For in-kind share distributions, coordinate with the fund administrator and each LP's custodian well in advance — DTC and international custodian transfers can take longer than cash wires.
+</Tip>
