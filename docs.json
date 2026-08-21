@@ -36,21 +36,21 @@
             ]
           },
           {
-            "group": "Fund Management",
-            "pages": [
-              "funds/overview",
-              "funds/fund-structure",
-              "funds/capital-calls",
-              "funds/distributions"
-            ]
-          },
-          {
             "group": "Portfolio Management",
             "pages": [
               "portfolio/overview",
               "portfolio/companies",
               "portfolio/investments",
               "portfolio/monitoring"
+            ]
+          },
+          {
+            "group": "Fund Management",
+            "pages": [
+              "funds/overview",
+              "funds/fund-structure",
+              "funds/capital-calls",
+              "funds/distributions"
             ]
           },
           {
