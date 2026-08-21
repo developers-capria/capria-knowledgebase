@@ -70,7 +70,9 @@
           },
           {
             "group": "Fund Managers",
-            "pages": []
+            "pages": [
+              "fund-managers/index"
+            ]
           },
           {
             "group": "Operations",
