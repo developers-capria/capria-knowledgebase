@@ -63,12 +63,12 @@
             ]
           },
           {
-            "group": "Operations",
-            "pages": [
-              "operations/data-management",
-              "operations/workflows",
-              "operations/integrations"
-            ]
+            "group": "Companies",
+            "pages": []
+          },
+          {
+            "group": "Fund Managers",
+            "pages": []
           }
         ]
       },
