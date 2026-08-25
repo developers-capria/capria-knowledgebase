@@ -14,7 +14,10 @@
   },
   "navbar": {
     "links": [
-      { "label": "Support", "href": "mailto:info@capria.vc" }
+      {
+        "label": "Support",
+        "href": "mailto:info@capria.vc"
+      }
     ],
     "primary": {
       "type": "button",
@@ -173,19 +176,6 @@
               "fund-managers/vakayi-capital",
               "fund-managers/valor-capital"
             ]
-          },
-          {
-            "group": "Operations",
-            "pages": [
-              "operations/data-management",
-              "operations/workflows",
-              "operations/integrations"
-            ]
-            "pages": []
-          },
-          {
-            "group": "Fund Managers",
-            "pages": []
           }
         ]
       },
