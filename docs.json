@@ -181,6 +181,11 @@
               "operations/workflows",
               "operations/integrations"
             ]
+            "pages": []
+          },
+          {
+            "group": "Fund Managers",
+            "pages": []
           }
         ]
       },
