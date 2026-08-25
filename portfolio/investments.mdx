@@ -4,102 +4,91 @@ sidebarTitle: "Investments"
 description: "Track every investment Capria has made, including round details, ownership percentages, convertible instruments, and co-investors."
 ---
 
-Each investment record captures the specific terms and details of a capital deployment — from the round type and instrument used to the resulting ownership stake and the co-investors at the table. Every time Capria deploys capital into a company, create a new investment record. This includes initial investments, follow-on rounds, and bridge financings. Maintaining complete, accurate investment records is essential for ownership tracking, cost basis calculations, and fund-level performance reporting.
+Capria has made **153 investments** across eight vehicles since 2012. This page is the reconciliation view: the same capital cut by fund, by instrument type and by region. Individual positions live on the [company](/companies/index) and [fund manager](/fund-managers/index) pages.
 
-## Investment Record Fields
+<Note>
+  Figures are as of **31 March 2026**, gross of management fees, fund expenses and carried interest. Committed capital is shown only where Capria has an LP commitment; direct company investments have no undrawn commitment.
+</Note>
 
-Create a separate record for each discrete capital deployment. The fields below apply to every investment, regardless of instrument type or round stage.
+## By fund
 
-| Field | Description |
-|---|---|
-| Fund | The Capria fund vehicle that made the investment (e.g., Fund I, Fund II) |
-| Company | The portfolio company receiving the capital |
-| Investment Date | The date on which capital was wired or legally deployed |
-| Round Type | The stage label for the round (Seed, Series A, Series B, Bridge, etc.) |
-| Instrument | The legal instrument used: common stock, preferred stock, SAFE, or convertible note |
-| Investment Amount | The amount Capria invested in this specific round |
-| Round Size | The total amount raised by the company in this round from all investors |
-| Pre-money Valuation | The agreed company valuation immediately before this round closed |
-| Post-money Valuation | The company valuation after the round closes (pre-money + round size) |
-| Ownership % (post) | Capria's fully diluted ownership stake immediately after the round closes |
-| Co-investors | Names of all other investors participating in this round |
-| Lead Investor | The investor leading the round (may be Capria) |
-| Board Seat | Whether Capria holds or is entitled to a board seat as a result of this investment |
+| Fund | First investment | Positions | Committed | Invested | Realized | Fair value | Total value | Gross MOIC |
+| --- | --- | --: | --: | --: | --: | --: | --: | --: |
+| Capria Global South Fund I | 2016 | 48 | \$29.05M | \$46.44M | \$11.56M | \$44.85M | \$56.41M | 1.21x |
+| Capria Global South Fund II | 2021 | 19 | \$5.00M | \$18.29M | \$0 | \$18.31M | \$18.31M | 1.00x |
+| Capria India Fund I | 2014 | 21 | — | \$3.97M | \$1.03M | \$12.57M | \$13.59M | 3.42x |
+| Capria India Fund I Cayman | 2012 | 23 | — | \$9.51M | \$2.41M | \$27.74M | \$30.15M | 3.17x |
+| Capria India Fund II | 2018 | 16 | — | \$25.54M | \$14.77M | \$61.48M | \$76.25M | 2.99x |
+| Capria India Fund III | 2025 | 7 | — | \$5.54M | \$0 | \$5.54M | \$5.54M | 1.00x |
+| Capria India Opportunity Fund I | 2023 | 10 | — | \$16.71M | \$4.43M | \$13.88M | \$18.30M | 1.10x |
+| SPV (Capria Opportunities, LP) | 2021 | 9 | — | \$6.68M | \$1.99M | \$7.05M | \$9.03M | 1.35x |
+| **Total** |  | **153** |  | **\$132.68M** | **\$36.18M** | **\$191.40M** | **\$227.58M** | **1.72x** |
 
-## Instrument Types
+## By instrument type
 
-Different investment instruments carry different rights, conversion mechanics, and risk profiles. Understand the instrument used in each round before recording the investment.
+| Instrument | Positions | Invested | Realized | Fair value | Total value | Gross MOIC |
+| --- | --: | --: | --: | --: | --: | --: |
+| Direct company investments | 109 | \$95.50M | \$27.18M | \$157.07M | \$184.25M | 1.93x |
+| Fund (LP) commitments | 19 | \$26.80M | \$3.36M | \$27.01M | \$30.38M | 1.13x |
+| Warehoused companies | 8 | \$2.78M | \$2.69M | \$214k | \$2.91M | 1.05x |
+| SPV series | 9 | \$6.68M | \$1.99M | \$7.05M | \$9.03M | 1.35x |
+| GP loans | 6 | \$611k | \$644k | \$59k | \$703k | 1.15x |
+| Venture debt / NCDs | 2 | \$307k | \$310k | \$0 | \$309k | 1.00x |
 
-<Accordion title="Common Stock">
-  Common stock is typically issued to founders and early employees at company formation. It carries no liquidation preference and sits below preferred stockholders in the capital structure. In early-stage investments, Capria rarely takes common stock — it is more often seen in secondary purchases of founder shares or unusual early structures.
+## By region
 
-  **Key attributes to record:**
-  - Number of shares purchased
-  - Price per share
-  - Any voting rights or restrictions associated with the shares
-</Accordion>
+| Region | Entities | Invested | Realized | Fair value | Total value | Gross MOIC |
+| --- | --: | --: | --: | --: | --: | --: |
+| India | 50 | \$81.38M | \$27.28M | \$143.31M | \$170.59M | 2.10x |
+| LatAm | 20 | \$20.98M | \$2.13M | \$17.47M | \$19.60M | 0.93x |
+| Africa | 20 | \$20.50M | \$6.12M | \$22.77M | \$28.89M | 1.41x |
+| SE Asia | 10 | \$9.82M | \$652k | \$7.85M | \$8.50M | 0.87x |
 
-<Accordion title="Preferred Stock">
-  Preferred stock is the standard instrument for institutional VC investments. It provides a liquidation preference (typically 1x non-participating), anti-dilution protection (usually broad-based weighted average), and pro-rata rights for future rounds. Each series of preferred stock (Series A, Series B, etc.) is a separate class with its own terms as defined in the term sheet and stock purchase agreement.
+Region counts are unique companies and managers, so a name held in several funds is counted once.
 
-  **Key attributes to record:**
-  - Series designation (e.g., Series A Preferred)
-  - Liquidation preference (amount and participating vs. non-participating)
-  - Anti-dilution provision type
-  - Pro-rata rights (amount and conditions)
-  - Dividend terms, if any
-</Accordion>
+## The eight vehicles
 
-<Accordion title="SAFE (Simple Agreement for Future Equity)">
-  A SAFE is a convertible instrument that gives Capria the right to receive equity at a future priced round. It is not debt — it carries no interest rate or maturity date — but it does convert into preferred stock when a qualifying financing event occurs. SAFEs are common in pre-seed and seed-stage investments.
+<AccordionGroup>
+  <Accordion title="Capria Global South Fund I">
+    Capria's flagship multi-strategy fund: direct company investments alongside LP commitments into 15 emerging-market managers, plus six GP loans and a set of warehoused positions. The largest and most diversified vehicle in the portfolio.
+  </Accordion>
 
-  **Key attributes to record:**
-  - Valuation cap (the maximum valuation at which the SAFE converts)
-  - Discount rate (percentage discount to the round price at conversion, if applicable)
-  - MFN (Most Favored Nation) clause, if present
-  - Qualifying financing threshold that triggers conversion
-  - Post-money or pre-money SAFE structure
-</Accordion>
+  <Accordion title="Capria Global South Fund II">
+    The successor fund: applied-AI-led direct investments across all four regions, with four further LP commitments (Valor IV, India Quotient IV, Integra II, NXTP III).
+  </Accordion>
 
-<Accordion title="Convertible Note">
-  A convertible note is a debt instrument that converts into equity at a future priced round or upon maturity. Unlike a SAFE, it accrues interest and has a maturity date. If the company does not raise a qualifying round before maturity, the note may be repayable or subject to renegotiation.
+  <Accordion title="Capria India Fund I and India Fund I Cayman">
+    The original Unitus Seed Fund vehicles, run as parallel onshore and Cayman structures. Largely realized or written off, with BetterPlace, Cuemath and DriveU carrying the remaining value.
+  </Accordion>
 
-  **Key attributes to record:**
-  - Principal amount
-  - Interest rate (annual, simple or compounding)
-  - Maturity date
-  - Valuation cap and/or discount rate at conversion
-  - Conversion trigger (qualifying financing amount)
-  - Repayment or rollover terms if maturity is reached without conversion
-</Accordion>
+  <Accordion title="Capria India Fund II">
+    The second India fund and the strongest performer in the portfolio by total value, anchored by Masai School, BetterPlace, Eduvanz, New Street Tech and the realized Awign position.
+  </Accordion>
 
-## Ownership Tracking
+  <Accordion title="Capria India Fund III">
+    The current India vehicle, deploying into AI-native Indian companies. All positions are still held at or near cost.
+  </Accordion>
 
-Capria tracks ownership on both a non-diluted and fully diluted basis. Use fully diluted ownership as the primary figure for portfolio reporting, as it reflects the economic reality of all instruments that could convert into equity.
+  <Accordion title="Capria India Opportunity Fund I">
+    A follow-on vehicle taking concentrated positions in the strongest India Fund I and II names, plus one NCD.
+  </Accordion>
 
-- **Non-diluted ownership**: calculated as shares held by Capria divided by total issued and outstanding shares. This figure does not account for options, warrants, SAFEs, convertible notes, or unissued option pool shares.
-- **Fully diluted ownership**: calculated as shares held by Capria divided by the total of all issued shares plus the unissued option pool, plus all shares that would be issued upon conversion of outstanding convertible instruments (SAFEs, notes, warrants). This is the most conservative and accurate measure of economic ownership.
+  <Accordion title="Capria Opportunities, LP (SPV platform)">
+    Single-company series used to syndicate follow-on capital into existing portfolio companies — Awign, BetterPlace, DriveU, 5C Network, Eduvanz, Blowhorn, BharatAgri and Digitt.
+  </Accordion>
+</AccordionGroup>
 
-<Warning>
-  Ownership percentages change with every new funding round, option pool expansion, and SAFE or convertible note conversion. Never rely on a historical ownership figure without confirming it against the most recent cap table. Always request an updated, fully diluted cap table from the company after each financing event.
-</Warning>
+## Reading these numbers
 
-## Follow-on Investments
+| Term | Definition |
+| --- | --- |
+| Committed | Capital Capria has contractually committed to a fund manager, drawn and undrawn |
+| Invested capital | Capital actually deployed into the position |
+| Realizations | Cash and marketable proceeds returned from the position |
+| Fair value | Carrying value of the remaining position at the valuation date |
+| Total value | Realizations plus fair value |
+| Gross MOIC | Total value divided by invested capital, before fees, expenses and carry |
 
-Pro-rata rights give Capria the contractual right to participate in future funding rounds up to its current ownership percentage, preventing dilution. When the investment team decides to exercise pro-rata rights or make an opportunistic follow-on investment, record it as a new, separate investment record linked to the same portfolio company.
-
-When recording a follow-on investment:
-- Reference the original investment record(s) for the same company
-- Note whether the follow-on was a pro-rata exercise or an additional allocation
-- Update the total cost basis for the company
-- Recalculate fully diluted ownership using the updated cap table
-
-Reserves are capital set aside within a fund to support follow-on investments in existing portfolio companies. Document the reserve allocation per company in the fund's reserve model and update it after each follow-on deployment or when a reserve is released back to the unallocated pool.
-
-## Cost Basis and Valuation
-
-Understanding the difference between cost basis and carrying value is essential for accurate NAV calculations and performance reporting.
-
-- **Cost basis**: the total capital Capria has deployed into a company across all rounds and instruments. This is a fixed historical figure that increases only when new capital is invested. Use cost basis to calculate unrealized loss and to report total invested capital.
-- **Carrying value**: the current fair market value assigned to Capria's position in the company, used for NAV calculations and LP reporting. Carrying value is updated at each mark-to-market event (new round, revenue milestone, or quarterly valuation review) and may be higher or lower than cost basis.
-- **Step-up**: the percentage increase between Capria's average entry price and the current marked valuation. A step-up of 3x means the current carrying value is three times the cost basis. Track step-up per company and at the portfolio level to monitor unrealized value creation.
+<Note>
+  A few positions carry a small negative fair value at the reporting date from valuation adjustments and rounding; they are shown as \$0 in summary tables.
+</Note>
