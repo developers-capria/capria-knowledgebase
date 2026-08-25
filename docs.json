@@ -134,13 +134,24 @@
               "companies/techcoop",
               "companies/thirdai",
               "companies/ue-lifesciences",
-              "companies/utter"
+              "companies/utter",
+              "companies/vexi",
+              "companies/villfarm",
+              "companies/whereismytransport",
+              "companies/wagely",
+              "companies/wify",
+              "companies/welcare",
+              "companies/zimavian",
+              "companies/urban-tailor"
             ]
           },
           {
             "group": "Fund Managers",
             "pages": [
-              "fund-managers/index"
+              "fund-managers/index",
+              "fund-managers/angel-ventures",
+              "fund-managers/ac-ventures",
+              "fund-managers/adobe-capital"
             ]
           },
           {
