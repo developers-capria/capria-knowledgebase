@@ -3,14 +3,15 @@
   "theme": "maple",
   "name": "Capria Ventures",
   "colors": {
-    "primary": "#ef7025",
-    "light": "#eec9bc",
-    "dark": "#4fa1ab"
+    "primary": "#1c3eff",
+    "light": "#d7deff",
+    "dark": "#5184db"
   },
   "favicon": "/favicon.svg",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/capria_logo.webp",
+    "dark": "/images/dark.png",
+    "href": "https://capria.vc"
   },
   "navbar": {
     "links": [
@@ -204,6 +205,12 @@
   "footer": {
     "socials": {
       "linkedin": "https://linkedin.com/company/capria-ventures"
+    }
+  },
+  "background": {
+    "decoration": "grid",
+    "color": {
+      "dark": "#01003b"
     }
   }
 }
