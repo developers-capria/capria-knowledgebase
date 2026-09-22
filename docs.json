@@ -50,6 +50,13 @@
             ]
           },
           {
+            "group": "Funds",
+            "icon": "landmark",
+            "pages": [
+              "funds/index"
+            ]
+          },
+          {
             "group": "Fund Management",
             "pages": [
               "funds/overview",
