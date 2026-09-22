@@ -53,7 +53,8 @@
             "group": "Funds",
             "icon": "landmark",
             "pages": [
-              "funds/index"
+              "funds/index",
+              "funds/india-fund-i"
             ]
           },
           {
