@@ -40,6 +40,15 @@
             ]
           },
           {
+            "group": "Fund Management",
+            "pages": [
+              "funds/overview",
+              "funds/fund-structure",
+              "funds/capital-calls",
+              "funds/distributions"
+            ]
+          },
+          {
             "group": "Portfolio Management",
             "pages": [
               "portfolio/overview",
@@ -50,7 +59,15 @@
             ]
           },
           {
-            "group": "Funds",
+            "group": "Performance & Reporting",
+            "pages": [
+              "reporting/metrics",
+              "reporting/lp-reports",
+              "reporting/benchmarks"
+            ]
+          },
+          {
+            "group": "Funds Directory",
             "icon": "landmark",
             "pages": [
               "funds/index",
@@ -64,132 +81,163 @@
             ]
           },
           {
-            "group": "Fund Management",
+            "group": "Portfolio Directory",
+            "icon": "address-book",
             "pages": [
-              "funds/overview",
-              "funds/fund-structure",
-              "funds/capital-calls",
-              "funds/distributions"
-            ]
-          },
-          {
-            "group": "Performance & Reporting",
-            "pages": [
-              "reporting/metrics",
-              "reporting/lp-reports",
-              "reporting/benchmarks"
-            ]
-          },
-          {
-            "group": "Companies",
-            "pages": [
-              "companies/index",
-              "companies/5c-network",
-              "companies/addresshealth",
-              "companies/agrizy",
-              "companies/agrofy",
-              "companies/alami-hijra",
-              "companies/aprende-institute",
-              "companies/arado",
-              "companies/awign",
-              "companies/bandhoo",
-              "companies/betterplace",
-              "companies/bfree",
-              "companies/bodhicrew",
-              "companies/caravan-craft",
-              "companies/commerzpoint",
-              "companies/connect-heal",
-              "companies/cuemath",
-              "companies/curacel",
-              "companies/curiositi",
-              "companies/cusmat",
-              "companies/digitt",
-              "companies/driveu",
-              "companies/eduvanz",
-              "companies/enmovil",
-              "companies/faradai",
-              "companies/flextock",
-              "companies/floworks",
-              "companies/gigforce",
-              "companies/bharatagri",
-              "companies/blowhorn",
-              "companies/cyclops",
-              "companies/eden-farm",
-              "companies/gocoop",
-              "companies/goflux",
-              "companies/habitat",
-              "companies/helium-health",
-              "companies/hippocampus",
-              "companies/lab-in-app",
-              "companies/jumbotail",
-              "companies/jack-on-block",
-              "companies/home-agent",
-              "companies/homelux",
-              "companies/jiffstore",
-              "companies/mentalup",
-              "companies/kueski",
-              "companies/krazybee",
-              "companies/magma",
-              "companies/mesfix",
-              "companies/masai-school",
-              "companies/max-metro-africa-xpress",
-              "companies/hrbot",
-              "companies/kyepot",
-              "companies/mgaadi",
-              "companies/milaap",
-              "companies/moniepoint",
-              "companies/nektar-ai",
-              "companies/new-street-tech",
-              "companies/one-click-wash",
-              "companies/paymob",
-              "companies/predible",
-              "companies/salesken",
-              "companies/seamlesshr",
-              "companies/sendy",
-              "companies/smile-merchants",
-              "companies/supermoney",
-              "companies/swvl",
-              "companies/techcoop",
-              "companies/thirdai",
-              "companies/ue-lifesciences",
-              "companies/utter",
-              "companies/vexi",
-              "companies/villfarm",
-              "companies/whereismytransport",
-              "companies/wagely",
-              "companies/wify",
-              "companies/welcare",
-              "companies/zimavian",
-              "companies/urban-tailor"
-            ]
-          },
-          {
-            "group": "Fund Managers",
-            "pages": [
-              "fund-managers/index",
-              "fund-managers/ac-ventures",
-              "fund-managers/adobe-capital",
-              "fund-managers/angel-ventures",
-              "fund-managers/arkam-ventures",
-              "fund-managers/ascend-vietnam-ventures-avv",
-              "fund-managers/atlantica-ventures",
-              "fund-managers/capria-ventures-india-fund-ii",
-              "fund-managers/cometa",
-              "fund-managers/fen-ventures",
-              "fund-managers/deetken-impact",
-              "fund-managers/genesis-alternative-ventures",
-              "fund-managers/global-ventures",
-              "fund-managers/ida-capital",
-              "fund-managers/india-quotient",
-              "fund-managers/integra-partners",
-              "fund-managers/iungo-capital",
-              "fund-managers/lateral-frontiers-vc",
-              "fund-managers/nxtp",
-              "fund-managers/pomona-impact",
-              "fund-managers/salkantay-ventures",
-              "fund-managers/sp-ventures",
-              "fund-managers/vakayi-capital",
-              "fund-managers/valor-capital"
+              {
+                "group": "Fund Managers",
+                "pages": [
+                  "fund-managers/index",
+                  {
+                    "group": "Africa",
+                    "pages": [
+                      "fund-managers/atlantica-ventures",
+                      "fund-managers/global-ventures",
+                      "fund-managers/ida-capital",
+                      "fund-managers/iungo-capital",
+                      "fund-managers/lateral-frontiers-vc",
+                      "fund-managers/vakayi-capital"
+                    ]
+                  },
+                  {
+                    "group": "India",
+                    "pages": [
+                      "fund-managers/arkam-ventures",
+                      "fund-managers/capria-ventures-india-fund-ii",
+                      "fund-managers/india-quotient"
+                    ]
+                  },
+                  {
+                    "group": "LatAm",
+                    "pages": [
+                      "fund-managers/adobe-capital",
+                      "fund-managers/angel-ventures",
+                      "fund-managers/cometa",
+                      "fund-managers/deetken-impact",
+                      "fund-managers/fen-ventures",
+                      "fund-managers/nxtp",
+                      "fund-managers/pomona-impact",
+                      "fund-managers/salkantay-ventures",
+                      "fund-managers/sp-ventures",
+                      "fund-managers/valor-capital"
+                    ]
+                  },
+                  {
+                    "group": "SE Asia",
+                    "pages": [
+                      "fund-managers/ac-ventures",
+                      "fund-managers/ascend-vietnam-ventures-avv",
+                      "fund-managers/genesis-alternative-ventures",
+                      "fund-managers/integra-partners"
+                    ]
+                  }
+                ],
+                "expanded": false
+              },
+              {
+                "group": "Companies",
+                "expanded": false,
+                "pages": [
+                  "companies/index",
+                  {
+                    "group": "Africa",
+                    "pages": [
+                      "companies/bfree",
+                      "companies/curacel",
+                      "companies/faradai",
+                      "companies/flextock",
+                      "companies/helium-health",
+                      "companies/homelux",
+                      "companies/max-metro-africa-xpress",
+                      "companies/mentalup",
+                      "companies/moniepoint",
+                      "companies/paymob",
+                      "companies/seamlesshr",
+                      "companies/sendy",
+                      "companies/whereismytransport",
+                      "companies/zimavian"
+                    ]
+                  },
+                  {
+                    "group": "India",
+                    "pages": [
+                      "companies/5c-network",
+                      "companies/addresshealth",
+                      "companies/agrizy",
+                      "companies/awign",
+                      "companies/bandhoo",
+                      "companies/betterplace",
+                      "companies/bharatagri",
+                      "companies/blowhorn",
+                      "companies/bodhicrew",
+                      "companies/caravan-craft",
+                      "companies/commerzpoint",
+                      "companies/connect-heal",
+                      "companies/cuemath",
+                      "companies/curiositi",
+                      "companies/cusmat",
+                      "companies/cyclops",
+                      "companies/driveu",
+                      "companies/eduvanz",
+                      "companies/enmovil",
+                      "companies/floworks",
+                      "companies/gigforce",
+                      "companies/gocoop",
+                      "companies/habitat",
+                      "companies/hippocampus",
+                      "companies/hrbot",
+                      "companies/jack-on-block",
+                      "companies/jiffstore",
+                      "companies/jumbotail",
+                      "companies/krazybee",
+                      "companies/lab-in-app",
+                      "companies/magma",
+                      "companies/masai-school",
+                      "companies/mgaadi",
+                      "companies/milaap",
+                      "companies/new-street-tech",
+                      "companies/one-click-wash",
+                      "companies/predible",
+                      "companies/salesken",
+                      "companies/smile-merchants",
+                      "companies/supermoney",
+                      "companies/thirdai",
+                      "companies/ue-lifesciences",
+                      "companies/urban-tailor",
+                      "companies/utter",
+                      "companies/villfarm",
+                      "companies/welcare",
+                      "companies/wify"
+                    ]
+                  },
+                  {
+                    "group": "LatAm",
+                    "pages": [
+                      "companies/agrofy",
+                      "companies/aprende-institute",
+                      "companies/arado",
+                      "companies/digitt",
+                      "companies/goflux",
+                      "companies/home-agent",
+                      "companies/kueski",
+                      "companies/mesfix",
+                      "companies/swvl",
+                      "companies/vexi"
+                    ]
+                  },
+                  {
+                    "group": "SE Asia",
+                    "pages": [
+                      "companies/alami-hijra",
+                      "companies/eden-farm",
+                      "companies/kyepot",
+                      "companies/nektar-ai",
+                      "companies/techcoop",
+                      "companies/wagely"
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ]
